@@ -30,6 +30,7 @@ BOARD_USES_MMCUTILS := true
 BOARD_SUPPRESS_EMMC_WIPE := true
 TW_THEME := landscape_hdpi
 TW_INPUT_BLACKLIST := "isl29023\x0alsm9ds1_mag"
+TW_EXCLUDE_TWRPAPP := true
 
 # Kernel
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
@@ -43,7 +44,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 #BOARD_CUSTOM_BOOTIMG := true
 #BOARD_MRVL_BOOTIMG := true
 #BOARD_CUSTOM_MKBOOTIMG := marvl-mkbootimg
-#BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/mrvl/bootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/mkbootimg.mk
 
 
 
